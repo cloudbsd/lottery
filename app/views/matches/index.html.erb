@@ -1,0 +1,40 @@
+<%= link_to 'Fetch', matches_path %>
+
+<table class="table table-bordered">
+  <thead>
+    <tr class="active">
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>E</th>
+      <th>F</th>
+      <th>G</th>
+      <th>H</th>
+      <th>I</th>
+      <th>J</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% i = 0 %>
+    <% @match_list.each do |match| %>
+      <tr>
+        <td><%= match[0] %></td>
+        <td><%= match[1] %></td>
+        <td><%= match[2] %></td>
+        <td><%= link_to match[3], match[4] %></td>
+        <td><%= show_float match[5] %></td>
+        <td><%= show_float match[6] %></td>
+        <td><%= show_float match[7] %></td>
+        <td><%= show_float match[8] %></td>
+        <td><%= show_float match[9] %></td>
+        <td><%= show_float match[10] %></td>
+      </tr>
+      <% i += 1 %>
+    <% end %>
+  </tbody>
+</table>
+
+<%# debug @match_score_list %>
+<%# debug @match_list %>

@@ -38,3 +38,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'nokogiri'
+
+gem 'bootstrap-sass', '~> 3.1.0'
