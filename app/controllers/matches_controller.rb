@@ -25,6 +25,9 @@ class MatchesController < ApplicationController
     end
   end
 
+  def test
+  end
+
   private
 
   def parse_td(tr_link, td_tag)
